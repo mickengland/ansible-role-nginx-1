@@ -1,0 +1,16 @@
+---
+- name: Install EPEL repository
+  yum: name=epel-release state=present
+
+- name: Installs nginx web server
+  yum: name=nginx state=present update_cache=true  
+  notify:
+     - start nginx
+
+- name: Active nginx
+  service: name=nginx state=started
+
+- name: Upload default index.html for host
+  copy: src=index.html dest=/usr/share/nginx/html/ mode=0644
+  register: html 
+
