@@ -5,14 +5,13 @@ Install epel, install nginx and push a index.html file
 
 Example Playbook
 ----------------
+  - hosts: web
+    remote_user: centos
+    become: yes
+    gather_facts: yes
 
-- hosts: web
-  remote_user: centos
-  become: yes
-  gather_facts: yes
-
-  roles:
-    - role: nginx
+    roles:
+      - role: nginx
 
 
 Author Information
