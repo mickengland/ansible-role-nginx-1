@@ -9,9 +9,8 @@ Example Playbook
     remote_user: centos
     become: yes
     gather_facts: yes
-
     roles:
-      - role: nginx
+       - role: nginx
 
 
 Author Information
