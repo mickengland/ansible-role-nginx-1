@@ -1,7 +1,7 @@
 NGINX installation for Centos 5-6-7 
 =========
 
-Install epel, install nginx and push a index.html file
+Install epel, install nginx and push the index.html file
 
 Example Playbook
 ----------------
