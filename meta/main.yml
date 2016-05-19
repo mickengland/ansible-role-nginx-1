@@ -16,3 +16,4 @@ galaxy_info:
     galaxy_tags:
       - packaging
       - web
+      - nginx 
