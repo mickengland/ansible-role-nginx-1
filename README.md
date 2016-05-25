@@ -10,7 +10,7 @@ Example Playbook
       become: yes
       
       roles:
-         - role: michaellessard-nginx
+         - role: michaellessard.nginx
 
 Author Information
 ------------------
