@@ -1,6 +1,6 @@
 server {
         listen 80;
-        server_name ci.cadence.singles;
+        server_name ci.rbndev.com;
 
         location /github-webhook {
                 proxy_pass {{ jenkins_server_uri }};
